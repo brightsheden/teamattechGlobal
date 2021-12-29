@@ -1,0 +1,63 @@
+user Endpoints
+https://teamattech.herokuapp.com/api/user/login/ -- POST 
+https://teamattech.herokuapp.com/api/user/register/ -- POST 
+https://teamattech.herokuapp.com/api/user/profile/ -- Get
+
+booking
+https://teamattech.herokuapp.com/booking/api/allbooking/ -- GET - all booking list
+https://teamattech.herokuapp.com/booking/api/createbooking/ -- POST - create booking
+https://teamattech.herokuapp.com/booking/api/_id/getbooking/ -- GET - get booking by id
+https://teamattech.herokuapp.com/booking/api/_id/updatebooking/   -- PUT  - update booking
+https://teamattech.herokuapp.com/booking/api/_id/deletebooking/ -- DELETE - delete booking
+
+blog
+https://teamattech.herokuapp.com/api/blog/getallblogs/  -- GET - all blog list
+https://teamattech.herokuapp.com/api/blog/_id/getblogdetails/  -- GET - blog by id
+https://teamattech.herokuapp.com/api/blog/_id/updateBlog/  -- PUT - update blog 
+https://teamattech.herokuapp.com/api/blog/_id/deleteblog/  -- DELETE - delete blog
+https://teamattech.herokuapp.com/api/blog/createblog/  -- POST - create blog
+https://teamattech.herokuapp.com/api/blog/_id/rewiews/  -- POST - reviewblog
+
+https://teamattech.herokuapp.com/api/blog/uploadthumbnail/ -- POST - uploadBlogThumbnail
+
+agricProduct
+https://teamattech.herokuapp.com/api/agric/agricProducts/  -- GET - all agricProduct list
+https://teamattech.herokuapp.com/api/agric/_id/agricproduct/  -- GET - agricProduct by id
+https://teamattech.herokuapp.com/api/agric/_id/update/  -- PUT - update agricProduct 
+https://teamattech.herokuapp.com/api/agric/_id/delete/  -- DELETE - delete agricProduct
+https://teamattech.herokuapp.com/api/agric/createagric/  -- POST - create agricProduct
+https://teamattech.herokuapp.com/api/agric/_id/createrewiew/  -- POST - reviewagric
+
+https://teamattech.herokuapp.com/api/agric/uploadthumbnail/ -- POST - uploadThumbnali
+https://teamattech.herokuapp.com/api/agric/uploadimage1/ -- POST - uplaodeimage1
+https://teamattech.herokuapp.com/api/agric/uploadimage2/ -- POST - uplaodeimage2
+https://teamattech.herokuapp.com/api/agric/uploadimage3/ -- POST - uplaodeimage3
+
+naturalProduct
+https://teamattech.herokuapp.com/api/natural/naturalProducts/  -- GET - all naturalProduct list
+https://teamattech.herokuapp.com/api/natural/_id/naturalproduct/  -- GET - naturalProduct by id
+https://teamattech.herokuapp.com/api/natural/_id/update/  -- PUT - update naturalProduct 
+https://teamattech.herokuapp.com/api/natural/_id/delete/  -- DELETE - delete naturalProduct
+https://teamattech.herokuapp.com/api/natural/create/  -- POST - create naturalProduct
+https://teamattech.herokuapp.com/api/natural/_id/createrewiew/  -- POST - reviewnatural
+
+https://teamattech.herokuapp.com/api/natural/uploadthumbnail/ -- POST - uploadNaturalThumbnali
+https://teamattech.herokuapp.com/api/natural/uploadimage1/ -- POST - uplaodeimage1
+https://teamattech.herokuapp.com/api/natural/uploadimage2/ -- POST - uplaodeimage2
+https://teamattech.herokuapp.com/api/natural/uploadimage3/ -- POST - uplaodeimage3
+
+informationProduct
+https://teamattech.herokuapp.com/api/informationTech/informationProducts/  -- GET - all informationTechProduct list
+https://teamattech.herokuapp.com/api/informationTech/_id/informationproduct/  -- GET - informationTechProduct by id
+https://teamattech.herokuapp.com/api/informationTech/_id/update/  -- PUT - update informationTechProduct 
+https://teamattech.herokuapp.com/api/informationTech/_id/delete/  -- DELETE - delete informationTechProduct
+https://teamattech.herokuapp.com/api/informationTech/create/  -- POST - create informationTechProduct
+https://teamattech.herokuapp.com/api/informationTech/_id/createrewiew/  -- POST - reviewinformationTech
+
+https://teamattech.herokuapp.com/api/information/uploadthumbnail/ -- POST - uploadinformationThumbnali
+https://teamattech.herokuapp.com/api/information/uploadimage1/ -- POST - uplaodeimage1
+https://teamattech.herokuapp.com/api/information/uploadimage2/ -- POST - uplaodeimage2
+https://teamattech.herokuapp.com/api/information/uploadimage3/ -- POST - uplaodeimage3
+
+
+

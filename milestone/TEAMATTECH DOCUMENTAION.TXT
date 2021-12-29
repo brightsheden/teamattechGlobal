@@ -1,0 +1,176 @@
+LET START FROM THE BLOG
+
+- to get all the blogpost in the database, just make a get request
+https://teamattech.herokuapp.com/api/blog/getallblogs/  -- GET - all blog list
+
+- to  get blog by id or blogdetails, just make get request with id
+https://teamattech.herokuapp.com/api/blog/_id/getblogdetails/  -- GET - blog by id
+
+- to create blogPost , just make POST request with the following parameters
+- title
+- description
+- category
+https://teamattech.herokuapp.com/api/blog/createblog/  -- POST - create blog
+
+- to update blog,just make PUT request with the id and the following  following parameters
+- title
+- description
+- category
+https://teamattech.herokuapp.com/api/blog/_id/updateBlog/  -- PUT - update blog
+
+then for the blogthumbnail
+https://teamattech.herokuapp.com/api/blog/uploadthumbnail/ -- POST - uploadBlogThumbnail
+
+then to  delete,
+send delete request with the _id
+https://teamattech.herokuapp.com/api/blog/_id/deleteblog/  -- DELETE - delete blog
+
+then for reviews 
+just send post request with  blog  id you want to add reviews too
+https://teamattech.herokuapp.com/api/blog/_id/rewiews/  -- POST - reviewblog
+
+
+
+
+AGRIC PRODUCT
+
+- to get all the agricProduct in the database, just make a get request
+https://teamattech.herokuapp.com/api/agric/agricProducts/  -- GET - all agricProduct list
+
+- to  get agricProduct by id or blogdetails, just make GET request with id
+https://teamattech.herokuapp.com/api/agric/_id/agricproduct/  -- GET - agricProduct by id
+
+- to create agricProduct , just make POST request with the following parameters
+- title
+- description
+- category
+- price
+- stocks
+https://teamattech.herokuapp.com/api/agric/createagric/  -- POST - create agricProduct
+
+- to update agricProduct,just make PUT request with the id and the following  following parameters
+- title
+- description
+- category
+- price
+- stocks
+https://teamattech.herokuapp.com/api/agric/_id/update/  -- PUT - update agricProduct
+
+then for the agricproductthumbnail
+just send post request with the image file
+https://teamattech.herokuapp.com/api/agric/uploadthumbnail/ -- POST - uploadThumbnali
+
+then for the images  , send post request with the agricProduct._id and append image
+https://teamattech.herokuapp.com/api/agric/uploadimage1/ -- POST - uplaodeimage1
+https://teamattech.herokuapp.com/api/agric/uploadimage2/ -- POST - uplaodeimage2
+https://teamattech.herokuapp.com/api/agric/uploadimage3/ -- POST - uplaodeimage3
+
+
+then to  delete,
+send delete request with the _id
+https://teamattech.herokuapp.com/api/agric/_id/delete/  -- DELETE - delete agricProduct
+
+then for reviews 
+just send post request with  agricProduct  id you want to add reviews too
+https://teamattech.herokuapp.com/api/agric/_id/createrewiew/  -- POST - reviewagric
+
+
+
+naturalProduct
+
+- to get all the naturalProduct in the database, just make a get request
+https://teamattech.herokuapp.com/api/natural/naturalProducts/  -- GET - all naturalProduct list
+
+- to  get naturalProduct  by id or blogdetails, just make GET request with id
+https://teamattech.herokuapp.com/api/natural/_id/naturalproduct/  -- GET - naturalProduct by id
+
+- to create naturalProduct , just make POST request with the following parameters
+- title
+- description
+- category
+- price
+- stocks
+https://teamattech.herokuapp.com/api/natural/create/  -- POST - create naturalProduc
+
+- to update agricProduct,just make PUT request with the id and the following  following parameters
+- title
+- description
+- category
+- price
+- stocks
+https://teamattech.herokuapp.com/api/natural/_id/update/  -- PUT - update naturalProduct
+
+then for the naturalproductthumbnail
+just send post request with the image file
+https://teamattech.herokuapp.com/api/natural/uploadthumbnail/ -- POST - uploadNaturalThumbnali
+
+then for the images  , send post request with the naturalProduct_id and append image
+https://teamattech.herokuapp.com/api/natural/uploadimage1/ -- POST - uplaodeimage1
+https://teamattech.herokuapp.com/api/natural/uploadimage2/ -- POST - uplaodeimage2
+https://teamattech.herokuapp.com/api/natural/uploadimage3/ -- POST - uplaodeimage3
+
+then to  delete,
+send delete request with the _id
+https://teamattech.herokuapp.com/api/natural/_id/delete/  -- DELETE - delete naturalProduct
+
+then for reviews 
+just send post request with naturalProduct  id you want to add reviews too
+https://teamattech.herokuapp.com/api/natural/_id/createrewiew/  -- POST - reviewnatural
+
+
+information Product
+
+- to get all the informationTechProduct in the database, just make a get request
+https://teamattech.herokuapp.com/api/informationTech/informationProducts/  -- GET - all informationTechProduct list
+
+- to  get naturalProduct  by id or imformationTechdetails, just make GET request with id
+https://teamattech.herokuapp.com/api/informationTech/_id/informationproduct/  -- GET - informationTechProduct by id
+
+- to create informationproduct , just make POST request with the following parameters
+- title
+- description
+- category
+- price
+- demolink
+https://teamattech.herokuapp.com/api/informationTech/create/  -- POST - create informationTechProduct
+
+- to update informationTechProduct,just make PUT request with the id and the following  following parameters
+- title
+- description
+- category
+- price
+- is_premium
+- demolink
+https://teamattech.herokuapp.com/api/informationTech/_id/createrewiew/  -- POST - reviewinformationTech
+
+then for the informationproductthumbnail
+just send post request with the image file
+https://teamattech.herokuapp.com/api/information/uploadthumbnail/ -- POST - uploadinformationThumbnali
+
+then for the images  , send post request with the naturalProduct._id and append image
+https://teamattech.herokuapp.com/api/information/uploadimage1/ -- POST - uplaodeimage1
+https://teamattech.herokuapp.com/api/information/uploadimage2/ -- POST - uplaodeimage2
+https://teamattech.herokuapp.com/api/information/uploadimage3/ -- POST - uplaodeimage3
+
+then to  delete,
+send delete request with the _id
+https://teamattech.herokuapp.com/api/informationTech/_id/delete/  -- DELETE - delete informationTechProduct
+
+then for reviews 
+just send post request with informationProduct  id you want to add reviews too
+https://teamattech.herokuapp.com/api/informationTech/_id/createrewiew/  -- POST - reviewinformationTech
+
+
+user Endpoints
+to login , just send post request with the following parameters
+- username
+- password
+https://teamattech.herokuapp.com/api/user/login/ -- POST 
+
+TO REGISTER
+to register , but i guess , no user will register except the admin user , we can just leave it 
+https://teamattech.herokuapp.com/api/user/register/ -- POST 
+
+Admin profile
+To get admine profile  just make get request
+https://teamattech.herokuapp.com/api/user/profile/ -- Get
