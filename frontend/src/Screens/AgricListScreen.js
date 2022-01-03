@@ -18,14 +18,14 @@ function AgricListScreen({history}) {
     const agricList = useSelector(state => state.agricProductList)
     const {error,loading,agricProducts} = agricList
     
-    let keyword = history.location.search
+    let keyword1 = history.location.search
     useEffect(()=>{
-        dispatch(listAgricProducts())
+        dispatch(listAgricProducts(keyword1))
         
        
  
 
-    },[dispatch])
+    },[dispatch,keyword1])
   
 
 

@@ -6,6 +6,7 @@ import { FaNewspaper, FaUser} from 'react-icons/fa'
 
 import {useDispatch,useSelector} from 'react-redux'
 import { logout } from "../Actions/userActions";
+import SearchBox from "./SearchBox";
 
 function Header() {
 
@@ -30,7 +31,8 @@ function Header() {
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ml-auto">
+                    <SearchBox/>
+                        <Nav className="ml-auto pull-right">
                             <NavDropdown id='username' title="user">
                                 <LinkContainer to='/profile'>
                                     <NavDropdown.Item>

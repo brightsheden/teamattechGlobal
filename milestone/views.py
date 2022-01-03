@@ -185,7 +185,13 @@ def createBlogReviews(request, pk):
 #GetAgricProduct
 @api_view(["GET"])
 def getAgricProduct(request):
-    agricProduct = AgricProduct.objects.all()
+    query = request.query_params.get('keyword1')
+    print(query)
+    if query == None:
+        query= ''
+    agricProduct = AgricProduct.objects.filter(
+        title__icontains=query).order_by('-createdAt')
+    #agricProduct = AgricProduct.objects.all()
     serializer =  AgricProductSerializer(agricProduct, many=True)
     return Response(serializer.data)
 
@@ -396,7 +402,13 @@ def uploadNaturalImage3(request):
 #Get allinformationTechProduct
 @api_view(["GET"])
 def getInformationTechProduct(request):
-    informationTechProduct = InformationTechProduct.objects.all()
+    query = request.query_params.get('keyword')
+    print(query)
+    if query == None:
+        query= ''
+    informationTechProduct = InformationTechProduct.objects.filter(
+        title__icontains=query).order_by('-createdAt')
+    #informationTechProduct = InformationTechProduct.objects.all()
     serializer =  InformationTechProductSerializer(informationTechProduct, many=True)
     return Response(serializer.data)
 

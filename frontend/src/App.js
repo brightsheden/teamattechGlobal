@@ -33,6 +33,9 @@ import OrderScreen from "./Screens/OrderScreeen";
 import ShippingNatural from "./Screens/ShippingNaturalScreen"
 import shippingIct from './Screens/ShippingIctScreen'
 import AdminOrderScreen from './Screens/AdminOrderScreen';
+import MyorderScree from './Screens/MyorderScreen'
+//import { Footer } from './Components/footer.jsx'
+//import { Navigation } from './Components/navigation'
 
 function App() {
   return (
@@ -44,7 +47,7 @@ function App() {
        
         <Route path="/login" component={LoginScreen}/>
         <Route path='/register' component={RegisterScreen}/>
-        <Route path='/profile' component={Profilescreen}/>
+        <Route path='/profile' component={MyorderScree}/>
         <Route path='/blogs' component={BlogListScreen} exact/>
         <Route path='/blog/:id/' component={BlogDetailsScreen}/>
         <Route path='/adminpage' component={AdminScreen}/>
@@ -76,7 +79,7 @@ function App() {
       </Container>
 
     </main>
-    <Footer/>
+    <Footer />
   </Router>
   );
 }

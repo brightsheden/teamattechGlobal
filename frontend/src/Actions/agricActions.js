@@ -34,11 +34,11 @@ import {
     import axios from "axios"
 
 
-export const listAgricProducts = () => async (dispatch) => {
+export const listAgricProducts = (keyword1 = '') => async (dispatch) => {
     try {
         dispatch({ type: AGRIC_LIST_REQUEST })
 
-        const { data } = await axios.get(`http://127.0.0.1:8000/api/agric/agricProducts/`)
+        const { data } = await axios.get(`http://127.0.0.1:8000/api/agric/agricProducts${keyword1}`)
 
         dispatch({
             type: AGRIC_LIST_SUCCESS,

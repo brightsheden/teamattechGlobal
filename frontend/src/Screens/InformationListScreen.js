@@ -19,19 +19,25 @@ function InformationListScreen({history}) {
     const {error,loading,ictProducts} = informationList
     
     let keyword = history.location.search
+    console.log(keyword)
+    console.log("keyword is",keyword)
+
     useEffect(()=>{
-        dispatch(listIctProducts())
+        dispatch(listIctProducts(keyword))
         
        
  
 
-    },[dispatch])
+    },[dispatch, keyword])
   
 
 
     return (
         <div>
            
+
+           
+       
             
             <h1>LATEST ICT PRODUCTS</h1>
             {loading ? <Loader/> :

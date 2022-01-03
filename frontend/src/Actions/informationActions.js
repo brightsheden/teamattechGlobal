@@ -34,11 +34,11 @@ import {
     import axios from "axios"
 
 
-export const listIctProducts = () => async (dispatch) => {
+export const listIctProducts = (keyword='') => async (dispatch) => {
     try {
         dispatch({ type: ICT_LIST_REQUEST })
 
-        const { data } = await axios.get(`http://127.0.0.1:8000/api/informationTech/informationproducts/`)
+        const { data } = await axios.get(`http://127.0.0.1:8000/api/informationTech/informationproducts${keyword}`)
 
         dispatch({
             type: ICT_LIST_SUCCESS,
